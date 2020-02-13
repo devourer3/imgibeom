@@ -1,0 +1,303 @@
+@import "variable";
+
+a {
+  text-decoration: none !important;
+
+  &:focus { // IE 브라우저 클릭 후 점선 생기는 현상 수정
+    outline: none;
+  }
+}
+
+img {
+  &:focus { // IE 브라우저 클릭 후 점선 생기는 현상 수정
+    outline: none;
+  }
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+@media screen and #{$DESKTOP} {
+  .mobile {
+    display: none;
+  }
+  html {
+    max-width: 980px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    scroll-behavior: smooth;
+    background: black;
+  }
+  body {
+    font-family: $BASE_FONT_KR !important;
+    font-weight: $FONT_WEIGHT_REGULAR;
+    background-color: transparent !important;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  #___gatsby {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    #gatsby-focus-wrapper {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      header {
+        top: 0;
+        z-index: 300;
+        position: sticky;
+        background: black;
+        .header-entity {
+          display: flex;
+          align-items: center;
+          min-height: 40px;
+          flex-direction: row;
+          padding: 24px 80px;
+          //background-color: $COLOR_F8F8F8;
+          .home-con {
+            .home {
+              @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 20px);
+              &:before {
+                content: "";
+                display: inline-block;
+                margin-right: 4px;
+                filter: invert(100%);
+                @include setBackgroundImage('android_title.svg', 16px, 16px);
+              }
+            }
+          }
+          .desc-con {
+            margin-left: auto;
+            display: flex;
+            span {
+              @include setCursorPointer();
+              margin-right: 12px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+            .about {
+              @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_MEDIUM, 14px);
+            }
+            .career {
+              @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_MEDIUM, 14px);
+            }
+            .projects {
+              @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_MEDIUM, 14px);
+            }
+            .contact {
+              @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_MEDIUM, 14px);
+            }
+          }
+        }
+      }
+
+      main {
+        margin-top: 120px;
+        min-height: 100%;
+        padding: 0 80px;
+        .about-li {
+          .about-icon {
+            width: 20px;
+            height: 20px;
+          }
+          .about-text {
+            @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 18px);
+          }
+        }
+        .ma-about {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .pf-image-con {
+            margin-left: auto;
+            .pf-image {
+              width: 220px;
+              height: 220px;
+              border-radius: 120px;
+              border: 6px solid $COLOR_DDDDDD;
+            }
+          }
+          .pf-desc-con {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            .desc-1 {
+              margin-top: 22px;
+              @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 38px);
+              white-space: pre-wrap;
+            }
+            .desc-2 {
+              margin-top: 22px;
+              @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 20px);
+              white-space: pre-wrap;
+            }
+            .name {
+
+            }
+          }
+        }
+        .lg-li {
+          margin-top: 60px;
+          .lg-text {
+            @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 22px);
+          }
+        }
+        .lg-con {
+          display: flex;
+          flex-direction: column;
+          margin-top: 24px;
+          .lg-title {
+            @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
+          }
+          .lg-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+            .lg-item {
+              @include setSkillItem(1);
+            }
+          }
+        }
+
+        .pf-con {
+
+          .pf-title {
+            @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
+          }
+          .pf-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+            .pf-item {
+              @include setSkillItem(1);
+            }
+
+          }
+
+        }
+
+        .li-con {
+          .li-title {
+            @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
+          }
+          .li-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+            .li-item {
+              @include setSkillItem(1);
+            }
+          }
+        }
+
+        .to-con {
+          .to-title {
+            @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
+          }
+          .to-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+            .to-item {
+              @include setSkillItem(1);
+            }
+          }
+        }
+
+      }
+
+      footer {
+        .foot-con {
+          min-height: 120px;
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0 50px;
+          background-color: $COLOR_DDDDDD_OP_50;
+
+          .foot-and {
+            .and-link {
+              .and-icon {
+                width: 50px;
+                height: 50px;
+              }
+
+              .and-title {
+                margin-left: 14px;
+                @include setFont($COLOR_212121, $FONT_WEIGHT_BOLD, 21px);
+              }
+            }
+          }
+
+          .foot-react {
+            .react-link {
+              .react-icon {
+                width: 50px;
+                height: 50px;
+              }
+
+              .react-title {
+                margin-left: 14px;
+                @include setFont($COLOR_212121, $FONT_WEIGHT_BOLD, 21px);
+              }
+            }
+          }
+
+          .foot-legacy {
+            .legacy-link {
+              .legacy-icon {
+                width: 50px;
+                height: 50px;
+              }
+
+              .legacy-title {
+                margin-left: 14px;
+                @include setFont($COLOR_212121, $FONT_WEIGHT_BOLD, 21px);
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+
+
+}
+
+@media screen and #{$MOBILE} {
+  .desktop {
+    display: none;
+  }
+}

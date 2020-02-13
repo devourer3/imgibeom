@@ -1,0 +1,125 @@
+{
+  "language": [
+    {
+      "name" : "Java",
+      "d_name": "자바",
+      "skilled" : "상",
+      "percent": 80,
+      "per_color": "#4CAF50",
+      "l_image": "java.svg",
+      "desc": "처음 개발을 시작하면서 익힌 언어이며, 안드로이드 개발을 코틀린으로 바꾸기 전까지 2년 동안 사용한 언어입니다."
+    },
+    {
+      "name" : "Kotlin",
+      "d_name": "코틀린",
+      "skilled" : "중",
+      "percent": 65,
+      "per_color": "#FFC107",
+      "l_image": "kotlin.png",
+      "desc": "2019년 8월부터 공부 중인 언어이며, 현재 개인 프로젝트에 적용 하였습니다."
+    },
+    {
+      "name" : "JSX",
+      "d_name": "JSX",
+      "skilled" : "중",
+      "percent": 50,
+      "per_color": "#FFC107",
+      "l_image": "jsx.svg",
+      "desc": "재직 중일 때, 웹 페이지 개발(리액트-SPA)을 위해 공부하였습니다."
+    },
+    {
+      "name" : "Python",
+      "d_name": "파이썬",
+      "skilled": "중하",
+      "percent": 40,
+      "per_color": "#FF9800",
+      "l_image": "python.svg",
+      "desc" : "재직중일 때, 서비스의 크롤링 작업 및 인공지능(GAN) 작업을 위해 공부하였습니다."
+    },
+    {
+      "name": "CSS",
+      "d_name": "CSS(SCSS)",
+      "skilled": "상",
+      "l_image": "css.svg",
+      "per_color": "#4CAF50",
+      "percent": 85,
+      "desc" : "리액트로 만든 웹페이지의 디자인을 적용하기 위해 공부하였습니다."
+    },
+    {
+      "name" : "PHP",
+      "d_name": "PHP",
+      "skilled" : "중",
+      "percent": 45,
+      "per_color": "#FFC107",
+      "l_image": "php.svg",
+      "desc" : "안드로이드 개발을 진행하면서, 서버와 데이터를 주고받기 위해 공부하였습니다."
+    }
+  ],
+  "platform" : [
+    {
+      "name" : "Android",
+      "d_name": "안드로이드",
+      "skilled" : "상",
+      "p_image": "android.svg",
+      "per_color": "#4CAF50",
+      "percent": 85,
+      "desc" : "안드로이드 기본 4대 컴포넌트 뿐만 아니라 MVP, MVVM 아키텍처에 기반하여 개발을 즐깁니다."
+    }
+  ],
+  "library" : [
+    {
+      "name" : "React",
+      "d_name": "리액트",
+      "skilled" : "중상",
+      "li_image": "react.svg",
+      "per_color": "#C0CA33",
+      "percent": 70,
+      "desc" : "리액트에 대해 기본적인 이해(컴포넌트, 라이프 사이클, 상태관리)를 하고 있으며, 현재는 최신 트렌드에 맞게 훅을 사용하여 개발을 하고 있습니다."
+    }
+  ],
+  "tools" : [
+    {
+      "name" : "Git",
+      "d_name": "깃",
+      "skilled" : "중상",
+      "per_color": "#C0CA33",
+      "percent": 70,
+      "to_image": "git.svg",
+      "desc": "팀원들과 협업 하면서, 깃의 기본적의 사용법은 숙지하고 있습니다. 원격 저장소는 Bitbucket을 사용하였습니다.",
+      "popup": true
+    },
+    {
+      "name" : "Trello",
+      "skilled" : "중",
+      "to_image": "trello.svg",
+      "popup": false
+    }
+
+  ],
+  "career": [
+    {
+      "company": "프라이피",
+      "company_image": "",
+      "c_image": "",
+      "year_service": "1년 2개월"
+    }
+  ],
+  "projects": [
+    {
+      "P_name": "SWIPS",
+      "p_image": "swips.jpg",
+      "comment": "개발 및 유지보수",
+      "language": "자바",
+      "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
+      "commercial": "상용"
+    },
+    {
+      "p_name": "오프렌즈",
+      "p_image": "ofriends.png",
+      "comment": "개발 및 출시",
+      "language": "자바스크립트(리액트)",
+      "url": "https://www.ofriends.co.kr",
+      "commercial": "상용"
+    }
+  ]
+}
