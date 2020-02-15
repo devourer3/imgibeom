@@ -4,14 +4,21 @@ import SEO from "../components/seo"
 import "../styles/base.scss"
 import { useStore } from "../stores/useStore"
 import {About} from "../components/about"
-import { DATA_URL } from "../stores/base-store"
+import { Skills } from "../components/skills"
+import { Career } from "../components/career"
+import { Projects } from "../components/projects"
+import { Contact } from "../components/contact"
+import { Helmet } from "react-helmet/es/Helmet"
 
 const IndexPage = () => {
-  const store = useStore()
   return (
     <Layout>
       <SEO title="Introduce"/>
       <About/>
+      <Skills/>
+      <Career/>
+      <Projects/>
+      <Contact/>
     </Layout>
   )
 }

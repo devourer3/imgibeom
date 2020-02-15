@@ -24,12 +24,16 @@ const Header = () => {
             onClick={(e) => scrollMoveTo(e, 100)}>
           {store.base.str.W0004}</span>
           <span
+            className="skills"
+            onClick={(e) => scrollMoveTo(e, 440)}>
+          {store.base.str.W0022}</span>
+          <span
             className="career"
-            onClick={(e) => scrollMoveTo(e, 100)}>
+            onClick={(e) => scrollMoveTo(e, 2020)}>
           {store.base.str.W0005}</span>
           <span
             className="projects"
-            onClick={(e) => scrollMoveTo(e, 200)}>
+            onClick={(e) => scrollMoveTo(e, 2200)}>
           {store.base.str.W0006}</span>
           <span
             className="contact"

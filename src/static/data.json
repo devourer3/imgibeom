@@ -12,9 +12,9 @@
     {
       "name" : "Kotlin",
       "d_name": "코틀린",
-      "skilled" : "중",
-      "percent": 65,
-      "per_color": "#FFC107",
+      "skilled" : "상",
+      "percent": 75,
+      "per_color": "#4CAF50",
       "l_image": "kotlin.png",
       "desc": "2019년 8월부터 공부 중인 언어이며, 현재 개인 프로젝트에 적용 하였습니다."
     },
@@ -25,16 +25,16 @@
       "percent": 50,
       "per_color": "#FFC107",
       "l_image": "jsx.svg",
-      "desc": "재직 중일 때, 웹 페이지 개발(리액트-SPA)을 위해 공부하였습니다."
+      "desc": "웹 프론트엔드 페이지 개발(리액트-SPA)을 위해 공부하였습니다."
     },
     {
       "name" : "Python",
       "d_name": "파이썬",
       "skilled": "중하",
-      "percent": 40,
-      "per_color": "#FF9800",
+      "percent": 45,
+      "per_color": "#FFC107",
       "l_image": "python.svg",
-      "desc" : "재직중일 때, 서비스의 크롤링 작업 및 인공지능(GAN) 작업을 위해 공부하였습니다."
+      "desc" : "스포츠 앱 서비스의 크롤링 작업 및 인공지능(GAN) 작업을 위해 공부하였습니다."
     },
     {
       "name": "CSS",
@@ -52,7 +52,16 @@
       "percent": 45,
       "per_color": "#FFC107",
       "l_image": "php.svg",
-      "desc" : "안드로이드 개발을 진행하면서, 서버와 데이터를 주고받기 위해 공부하였습니다."
+      "desc" : "안드로이드 개발을 진행하면서, 서버와 클라이언트 간의 데이터를 주고받기 위해 공부하였습니다."
+    },
+    {
+      "name" : "SWIFT",
+      "d_name": "스위프트",
+      "skilled" : "하",
+      "percent": 20,
+      "per_color": "#FF5722",
+      "l_image": "swift.png",
+      "desc" : "안드로이드 뿐만 아니라, 다른 모바일 플랫폼 개발을 접해보기 위해 공부하였습니다."
     }
   ],
   "platform" : [
@@ -74,7 +83,7 @@
       "li_image": "react.svg",
       "per_color": "#C0CA33",
       "percent": 70,
-      "desc" : "리액트에 대해 기본적인 이해(컴포넌트, 라이프 사이클, 상태관리)를 하고 있으며, 현재는 최신 트렌드에 맞게 훅을 사용하여 개발을 하고 있습니다."
+      "desc" : "리액트에 대해 기본적인 이해를 하고 있으며, 현재는 최신 트렌드에 맞게 훅을 사용하여 개발을 하고 있습니다."
     }
   ],
   "tools" : [
@@ -83,9 +92,9 @@
       "d_name": "깃",
       "skilled" : "중상",
       "per_color": "#C0CA33",
-      "percent": 70,
+      "percent": 75,
       "to_image": "git.svg",
-      "desc": "팀원들과 협업 하면서, 깃의 기본적의 사용법은 숙지하고 있습니다. 원격 저장소는 Bitbucket을 사용하였습니다.",
+      "desc": "직장 내 팀원들과 지속적인 협업을 하며 사용했기 때문에, 능숙하게 다룰 줄 압니다. 원격 저장소는 Bitbucket 사용.",
       "popup": true
     },
     {
@@ -99,27 +108,40 @@
   "career": [
     {
       "company": "프라이피",
-      "company_image": "",
-      "c_image": "",
-      "year_service": "1년 2개월"
+      "company_image": "frifee.png",
+      "year_service": "2018.11.01 ~ 2020.01.30",
+      "position" : "Android Developer",
+      "desc" : "자사의 스포츠 앱 서비스인 'SWIPS'를 개발 하였으며,\n여가 액티비티 플랫폼 웹 서비스 '오프렌즈'를 리액트로 개발"
     }
   ],
   "projects": [
     {
-      "P_name": "SWIPS",
-      "p_image": "swips.jpg",
+      "category": "android",
+      "p_name": "SWIPS",
+      "p_thumbnail": "swips.jpg",
+      "p_image": [
+        "s_1.png","s_2.png","s_3.png","s_4.png","s_5.png"
+      ],
       "comment": "개발 및 유지보수",
-      "language": "자바",
+      "language": "개발언어: 자바",
+      "architecture": "MVP",
+      "library": "사용 라이브러리: Rxjava2, Dagger2, Retrofit2 등",
       "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
-      "commercial": "상용"
+      "url_icon" : "playstore.svg",
+      "commercial": true
     },
     {
+      "category": "react",
       "p_name": "오프렌즈",
-      "p_image": "ofriends.png",
+      "p_thumbnail": "ofriends.jpg",
+      "p_image": [
+        "react.svg"
+      ],
       "comment": "개발 및 출시",
       "language": "자바스크립트(리액트)",
       "url": "https://www.ofriends.co.kr",
-      "commercial": "상용"
+      "url_icon": "web.svg",
+      "commercial": true
     }
   ]
 }
