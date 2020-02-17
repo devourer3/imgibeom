@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import { useStore } from "../stores/useStore"
 import { DATA_URL } from "../stores/base-store"

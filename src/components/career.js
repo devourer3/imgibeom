@@ -1,6 +1,7 @@
 import { useStore } from "../stores/useStore"
 import React, { useState } from "react"
 import { DATA_URL } from "../stores/base-store"
+import '../styles/career.scss'
 
 export const Career = () => {
   const store = useStore();

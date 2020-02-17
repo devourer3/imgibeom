@@ -14,16 +14,15 @@ import Footer from "./footer"
 import { useStore } from "../stores/useStore"
 
 const Layout = ({ children }) => {
-
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  //`)
 
   return (
     <Fragment>

@@ -102,6 +102,12 @@
       "skilled" : "중",
       "to_image": "trello.svg",
       "popup": false
+    },
+    {
+      "name" : "Slack",
+      "skilled" : "중",
+      "to_image": "slack.svg",
+      "popup": false
     }
 
   ],
@@ -120,15 +126,27 @@
       "p_name": "SWIPS",
       "p_thumbnail": "swips.jpg",
       "p_image": [
-        "s_1.png","s_2.png","s_3.png","s_4.png","s_5.png"
+        "portimage/android/swips/s_1.png",
+        "portimage/android/swips/s_2.png",
+        "portimage/android/swips/s_3.png",
+        "portimage/android/swips/s_4.png",
+        "portimage/android/swips/s_5.png"
+      ],
+      "p_image_desc" : [
+        "",
+        "",
+        "",
+        "",
+        ""
       ],
       "comment": "개발 및 유지보수",
-      "language": "개발언어: 자바",
+      "language": "자바",
       "architecture": "MVP",
-      "library": "사용 라이브러리: Rxjava2, Dagger2, Retrofit2 등",
+      "library": "Rxjava2, Dagger2, Retrofit2, Realm, Glide4",
       "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
       "url_icon" : "playstore.svg",
-      "commercial": true
+      "commercial": true,
+      "det_cat" : "android"
     },
     {
       "category": "react",
@@ -141,7 +159,60 @@
       "language": "자바스크립트(리액트)",
       "url": "https://www.ofriends.co.kr",
       "url_icon": "web.svg",
-      "commercial": true
+      "commercial": true,
+      "det-cat" : "react"
+    },
+    {
+      "category": "private",
+      "p_name": "고음왕",
+      "p_thumbnail": "p_android.svg",
+      "p_image": [
+        "portimage/android/highpitch/h_0.png",
+        "portimage/android/highpitch/h_1.png",
+        "portimage/android/highpitch/h_2.png",
+        "portimage/android/highpitch/h_3.png"
+      ],
+      "p_image_desc" : [
+        "회원가입 페이지",
+        "Java 소켓을 활용한 다대다 채팅",
+        "서피스 뷰를 활용한 노래방 기능",
+        "기본적인 SNS 기능"
+      ],
+      "comment": "개발 및 유지보수",
+      "language": "자바",
+      "architecture": "",
+      "library": "Retrofit2, Glide, TarsosDSP",
+      "database" : "Mysql(5.7.21), SQLite",
+      "server": "Apache(2.4.27)",
+      "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
+      "url_icon" : "playstore.svg",
+      "commercial": false,
+      "det_cat" : "android"
+    },
+    {
+      "category": "private",
+      "p_name": "걸어요, 여행",
+      "p_thumbnail": "p_android.svg",
+      "p_image": [
+        "portimage/android/travel/t_1.png",
+        "portimage/android/travel/t_2.png",
+        "portimage/android/travel/t_3.png",
+        "portimage/android/travel/t_4.png"
+      ],
+      "p_image_desc" : [
+        "WebRTC를 활용한 1:1 영상통화",
+        "Tour API 3.0 활용한 국내 관광지 소개",
+        "RTMP 프로토콜을 활용한 방송 스트리밍 목록",
+        "스트리밍 화면 및 Netty를 활용한 다대다 채팅"
+      ],
+      "comment": "개발 및 유지보수",
+      "language": "자바",
+      "architecture": "",
+      "library": "Retrofit2, Glide",
+      "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
+      "url_icon" : "playstore.svg",
+      "commercial": false,
+      "det_cat" : "android"
     }
   ]
 }

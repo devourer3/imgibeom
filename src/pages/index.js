@@ -3,15 +3,18 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../styles/base.scss"
 import { useStore } from "../stores/useStore"
-import {About} from "../components/about"
+import { About } from "../components/about"
 import { Skills } from "../components/skills"
 import { Career } from "../components/career"
 import { Projects } from "../components/projects"
 import { Contact } from "../components/contact"
-import { Helmet } from "react-helmet/es/Helmet"
+import { Popup } from "../components/popup"
+import { useObserver } from "mobx-react-lite"
 
 const IndexPage = () => {
-  return (
+  const store = useStore()
+  console.log("popupOn: ", store.base.popupOpt.popupOn)
+  return useObserver(() => (
     <Layout>
       <SEO title="Introduce"/>
       <About/>
@@ -19,8 +22,11 @@ const IndexPage = () => {
       <Career/>
       <Projects/>
       <Contact/>
+      {
+        store.base.popupOpt.popupOn === true &&
+        <Popup/>
+      }
     </Layout>
-  )
+  ))
 }
-
 export default IndexPage

@@ -11,6 +11,9 @@ import { useObserver } from "mobx-react-lite"
 //   return React.useContext(MobXProviderContext);
 // }
 
+
+// https://blog.rhostem.com/posts/2019-07-22-mobx-v6-and-react-v16-8
+
 export const useStore = () => {
   const stores = React.useContext(MobXProviderContext);
   // const store = useStores();

@@ -2,41 +2,56 @@ import React, { useState } from "react"
 import { useStore } from "../stores/useStore"
 import { DATA_URL } from "../stores/base-store"
 import { Line } from "rc-progress"
+import '../styles/skills.scss'
 
 export const Skills = () => {
-  const store = useStore()
-  const [hover, setHover] = useState(false)
-  const [hoverId, setHoverId] = useState("")
+
+  const store = useStore();
+  const [hover, setHover] = useState(false);
+  const [hoverId, setHoverId] = useState("");
+  const [selectedId, setSelect] = useState("");
+
   const onMouseEnter = (e, listType) => {
-    e.preventDefault()
-    setHoverId(e.target.id)
+    e.preventDefault();
+    setHoverId(e.target.id);
   }
   const onMouseLeave = (e) => {
-    e.preventDefault()
-    setHoverId("")
+    e.preventDefault();
+    setHoverId("");
   }
+
+  const onClickItem = (e) => {
+    store.base.setPopupOption("popupOn", false);
+    store.base.setPopupOption("popupMsg", "");
+    setSelect(e.target.id);
+  }
+
   const renderLang = () => {
-    const data = store.base.data.language
-    let view = []
+    const data = store.base.data.language;
+    let view = [];
     if (data !== null) {
       data.map((item, index) => {
         view.push(
           <li
             id={"lg-" + index}
             className="lg-item"
-            onMouseEnter={event => onMouseEnter(event, "lg-")}
-            onMouseLeave={event => onMouseLeave(event)}
+            onClick={(event => onClickItem(event))}
+            // onMouseEnter={event => onMouseEnter(event, "lg-")}
+            // onMouseLeave={event => onMouseLeave(event)}
             key={index}>
             <img
+              id={"lg-" + index}
               className="sk-image"
               src={DATA_URL + item.l_image}
               alt=""
               onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
-            <span className="sk-name">
+            <span
+              id={"lg-" + index}
+              className="sk-name">
               {item.name}
             </span>
             {
-              (hoverId === ("lg-" + index)) &&
+              (selectedId === ("lg-" + index)) &&
               <div
                 className="sk-desc-con">
                 <span className="sk-title">
@@ -60,7 +75,7 @@ export const Skills = () => {
                 </div>
               </div>
             }
-          </li>
+          </li>,
         )
       })
       return (
@@ -80,19 +95,23 @@ export const Skills = () => {
           <li
             id={"pf-" + index}
             className="pf-item"
-            onMouseEnter={event => onMouseEnter(event, "pf-")}
-            onMouseLeave={event => onMouseLeave(event)}
+            onClick={(event => onClickItem(event))}
+            // onMouseEnter={event => onMouseEnter(event, "pf-")}
+            // onMouseLeave={event => onMouseLeave(event)}
             key={index}>
             <img
+              id={"pf-" + index}
               className="sk-image"
               src={DATA_URL + item.p_image}
               alt=""
               onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
-            <span className="sk-name">
+            <span
+              id={"pf-" + index}
+              className="sk-name">
               {item.name}
             </span>
             {
-              (hoverId === ("pf-" + index)) &&
+              (selectedId === ("pf-" + index)) &&
               <div
                 className="sk-desc-con">
                 <span className="sk-title">
@@ -136,19 +155,23 @@ export const Skills = () => {
           <li
             id={"li-" + index}
             className="li-item"
-            onMouseEnter={event => onMouseEnter(event, "pf-")}
-            onMouseLeave={event => onMouseLeave(event)}
+            onClick={(event => onClickItem(event))}
+            // onMouseEnter={event => onMouseEnter(event, "pf-")}
+            // onMouseLeave={event => onMouseLeave(event)}
             key={index}>
             <img
+              id={"li-" + index}
               className="sk-image"
               src={DATA_URL + item.li_image}
               alt=""
               onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
-            <span className="sk-name">
+            <span
+              id={"li-" + index}
+              className="sk-name">
               {item.name}
             </span>
             {
-              (hoverId === ("li-" + index)) &&
+              (selectedId === ("li-" + index)) &&
               <div
                 className="sk-desc-con">
                 <span className="sk-title">
@@ -191,20 +214,24 @@ export const Skills = () => {
         view.push(
           <li
             id={"to-" + index}
-            className="to-item"
-            onMouseEnter={event => onMouseEnter(event, "to-")}
-            onMouseLeave={event => onMouseLeave(event)}
+            className={item.popup === true ? "to-item pointer" : "to-item default"}
+            onClick={(event => onClickItem(event))}
+            // onMouseEnter={event => onMouseEnter(event, "to-")}
+            // onMouseLeave={event => onMouseLeave(event)}
             key={index}>
             <img
+              id={"to-" + index}
               className="sk-image"
               src={DATA_URL + item.to_image}
               alt=""
               onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
-            <span className="sk-name">
+            <span
+              id={"to-" + index}
+              className="sk-name">
               {item.name}
             </span>
             {
-              (hoverId === ("to-" + index) && item.popup === true) &&
+              (selectedId === ("to-" + index) && item.popup === true) &&
               <div
                 className="sk-desc-con">
                 <span className="sk-title">

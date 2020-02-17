@@ -1,0 +1,66 @@
+@import "base";
+@import "variable";
+
+@media screen and #{$DESKTOP} {
+
+
+  .about {
+    .ab-idx {
+      margin-top: 60px;
+
+      .ab-text {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 22px);
+      }
+    }
+
+    .ma-about {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 60px;
+
+      .pf-image-con {
+        margin-left: auto;
+
+        .pf-image {
+          width: 220px;
+          height: 220px;
+          border-radius: 120px;
+          border: 6px solid $COLOR_DDDDDD;
+        }
+      }
+
+      .pf-desc-con {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+
+        .desc-1 {
+          margin-top: 22px;
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 38px);
+          white-space: pre-wrap;
+        }
+
+        .desc-2 {
+          margin-top: 22px;
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 20px);
+          white-space: pre-wrap;
+        }
+
+        .name {
+
+        }
+      }
+    }
+  }
+
+}
+
+
+
+@media screen and #{$MOBILE} {
+  .desktop {
+    display: none;
+  }
+}

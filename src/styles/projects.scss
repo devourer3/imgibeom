@@ -1,0 +1,262 @@
+@import "base";
+@import "variable";
+
+@media screen and #{$DESKTOP} {
+
+  .projects {
+    margin-top: 80px;
+
+    .proj-idx {
+      .proj-text {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 22px);
+      }
+    }
+
+    .proj-tabs {
+      display: flex;
+      width: 100%;
+      margin-top: 60px;
+      padding: 0 20px;
+      justify-content: center;
+
+      .tab.active {
+        display: flex;
+        max-width: 100px;
+        justify-content: center;
+        width: 100%;
+        margin: 0 14px;
+        border-radius: 8px;
+        border: 1px solid $COLOR_444444;
+        background: $COLOR_FFFFFF;
+        @include setFont($COLOR_222222, $FONT_WEIGHT_REGULAR, 12px);
+        @include setCursorPointer();
+      }
+
+      .tab.inActive {
+        display: flex;
+        max-width: 100px;
+        justify-content: center;
+        width: 100%;
+        margin: 0 14px;
+        border-radius: 8px;
+        border: 1px solid $COLOR_FFFFFF;
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 12px);
+        @include setCursorPointer();
+      }
+    }
+
+    .proj-list {
+      display: flex;
+      margin-top: 60px;
+      padding: 0 30px;
+      flex-wrap: wrap;
+
+      .proj-item {
+        width: calc(100% / 3.0001);
+        display: flex;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .proj-detail-entire {
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          z-index: 300;
+          background: $COLOR_000000_OP_90;
+
+          .detail-wrapper {
+            display: flex;
+            width: auto;
+            height: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .det-close {
+              position: absolute;
+              width: 44px !important;
+              height: 44px !important;
+              margin-left: 400px;
+              top: 46px;
+              @include setCursorPointer();
+            }
+
+            .det-pic-con {
+              float: left;
+
+              span {
+                @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 12px);
+              }
+
+              .proj-carousel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .carousel.carousel-slider {
+                  max-width: 420px;
+                  //height: 100%;
+                  .slider-wrapper.axis-horizontal {
+                    ul {
+                      li {
+                        position: relative;
+                        .pic-wrapper {
+                          display: flex;
+                          flex-direction: column;
+                          position: relative;
+                          .proj-img {
+                            //display: inline-block;
+                            //position: absolute;
+                            //top: 0;
+                            //bottom: 0;
+                            //left: 0;
+                            //right: 0;
+                            //width: 100%;
+                            //height: 100%;
+                            padding-bottom: 24px;
+                          }
+                          .proj-desc {
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: 200;
+                            @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 14px);
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  .control-arrow.control-prev {
+                  }
+
+                  .control-arrow.control-next {
+                  }
+                }
+
+                .carousel {
+                  .thumbs-wrapper.axis-vertical {
+                    .thumbs.animated {
+                      .thumb {
+                        img {
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            .desc-entire {
+              display: flex;
+              flex-direction: column;
+              margin-left: 34px;
+
+              .det-name-con {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                  @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
+                }
+              }
+
+              .det-lang-con {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                span {
+                  @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
+                }
+              }
+
+              .det-lib-con {
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+
+                span {
+                  @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
+                }
+              }
+            }
+          }
+        }
+
+        .proj-thumbnail {
+          position: relative;
+          border-radius: 18px;
+          width: 135px;
+          height: 135px;
+          background: $COLOR_FFFFFF;
+        }
+
+        .proj-detail-con {
+          position: absolute;
+          width: 18px !important;
+          height: 18px !important;
+          max-width: 24px;
+          max-height: 24px;
+          margin-left: 50px;
+          margin-top: 100px;
+          @include setCursorPointer();
+
+          .proj-detail {
+            width: 18px !important;
+            height: 18px !important;
+            max-width: 30px;
+            max-height: 30px;
+          }
+
+        }
+
+        .proj-link {
+          margin-top: 12px;
+          min-width: 28px !important;
+          min-height: 28px !important;
+          max-width: 28px !important;
+          max-height: 28px !important;
+
+          .proj-link-thumb {
+            max-width: 28px;
+            max-height: 28px;
+          }
+        }
+
+        .proj-name {
+          margin-top: 10px;
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 20px);
+        }
+
+        .proj-desc-con {
+          display: flex;
+          flex-direction: column;
+          margin-left: 20px;
+
+          .proj-lang {
+
+          }
+
+          .proj-lib {
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and #{$MOBILE} {
+  .desktop {
+    display: none;
+  }
+}

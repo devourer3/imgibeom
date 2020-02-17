@@ -8,11 +8,32 @@ class BaseStore {
 
   @observable str;
   @observable data;
+  @observable popupOpt;
+  @observable popup
 
   constructor() {
     this.str = str;
     this.data = data;
+    this.popupOpt = {
+      "popupOn": false,
+      "popupMsg": ""
+    }
+    this.popup = true
   }
+
+  @action
+  setPopupOption = (key, value) => {
+    this.popupOpt[key] = value;
+  }
+
+  // @action
+  // setPopup = () => {
+  //   this.popup = false;
+  // }
+
+  // @computed get getPopupOpt() {
+  //   return this.popupOpt;
+  // }
 
   // @action setNickName = (name) => {
   //   this.nickName = name;

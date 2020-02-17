@@ -1,9 +1,10 @@
 import { useStore } from "../stores/useStore"
 import { DATA_URL } from "../stores/base-store"
-import React, { useState } from "react"
+import React from "react"
+import '../styles/about.scss'
 
 export const About = () => {
-  const store = useStore()
+  const store = useStore();
   // let [percent, setPercent] = useState(0)
   // const increase = (fixPercent) => {
   //   if(percent >= fixPercent) {
