@@ -14,6 +14,7 @@ import Footer from "./footer"
 import { useStore } from "../stores/useStore"
 
 const Layout = ({ children }) => {
+
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
   //     site {
@@ -31,7 +32,7 @@ const Layout = ({ children }) => {
       <main className="main">
         {children}
       </main>
-      {/*<Footer/>*/}
+      <Footer/>
     </Fragment>
   )
 }

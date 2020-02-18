@@ -170,13 +170,15 @@
         "portimage/android/highpitch/h_0.png",
         "portimage/android/highpitch/h_1.png",
         "portimage/android/highpitch/h_2.png",
-        "portimage/android/highpitch/h_3.png"
+        "portimage/android/highpitch/h_3.png",
+        "portimage/android/highpitch/h_4.png"
       ],
       "p_image_desc" : [
         "회원가입 페이지",
-        "Java 소켓을 활용한 다대다 채팅",
-        "서피스 뷰를 활용한 노래방 기능",
-        "기본적인 SNS 기능"
+        "기본적인 SNS 기능",
+        "Java 소켓을 활용한 다대다 채팅(1)",
+        "Java 소켓을 활용한 다대다 채팅(2)",
+        "실시간 음정을 체크하고, 점수를 표시하는 노래방 기능"
       ],
       "comment": "개발 및 유지보수",
       "language": "자바",
@@ -197,13 +199,15 @@
         "portimage/android/travel/t_1.png",
         "portimage/android/travel/t_2.png",
         "portimage/android/travel/t_3.png",
-        "portimage/android/travel/t_4.png"
+        "portimage/android/travel/t_4.png",
+        "portimage/android/travel/t_5.png"
       ],
       "p_image_desc" : [
-        "WebRTC를 활용한 1:1 영상통화",
         "Tour API 3.0 활용한 국내 관광지 소개",
-        "RTMP 프로토콜을 활용한 방송 스트리밍 목록",
-        "스트리밍 화면 및 Netty를 활용한 다대다 채팅"
+        "Google Location API를 사용하여, 내 주변 사람들을 검색",
+        "WebRTC를 활용하여, 내 주변의 사람들과 1:1 영상통화",
+        "Redis를 활용한, 방송 스트리밍 목록",
+        "스트리밍 화면 및 Netty(소켓채널)를 활용한 다대다 채팅"
       ],
       "comment": "개발 및 유지보수",
       "language": "자바",

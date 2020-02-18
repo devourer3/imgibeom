@@ -2,8 +2,6 @@
 @import "variable";
 
 @media screen and #{$DESKTOP} {
-
-
   .contact {
     margin-top: 80px;
 
@@ -144,13 +142,150 @@
       }
     }
   }
-
 }
 
 
 
-@media screen and #{$MOBILE} {
+@media screen and #{$TABLET} {
   .desktop {
     display: none;
+  }
+  .contact {
+    margin-top: 40px;
+
+    .cont-idx {
+      .cont-text {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 18px);
+      }
+    }
+
+    .contact-container {
+      width: 100%;
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+      .con-image-con {
+        width: 180px;
+        height: 180px;
+        .mail-img {
+        }
+      }
+
+      .mail-to-me {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 32px);
+      }
+
+      .btn-sendMail {
+        margin-top: 16px;
+        //border: none;
+        background: none;
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 20px);
+      }
+    }
+
+    .mail-form-container {
+      width: 100%;
+      min-height: 55vh;
+      display: flex;
+      flex-direction: column;
+      .appreciate-send {
+        display: flex;
+        margin: 30px auto 0;
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        background: $COLOR_FFFFFF;
+        height: 60px;
+        @include setFont($COLOR_000000_OP_70, $FONT_WEIGHT_REGULAR, 24px);
+      }
+
+      .name-field {
+        margin-top: 26px;
+        display: flex;
+        flex-direction: column;
+
+        .name-txt {
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
+        }
+
+        .name-form {
+          margin-top: 12px;
+          min-width: 120px;
+          padding: 2px;
+          @include setFont($COLOR_222222, $FONT_WEIGHT_REGULAR, 14px);
+        }
+      }
+
+      .email-field {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .email-txt {
+          display: flex;
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
+        }
+
+        .email-form {
+          margin-top: 12px;
+          min-width: 230px;
+          padding: 2px;
+          @include setFont($COLOR_222222, $FONT_WEIGHT_REGULAR, 14px);
+          //border: none;
+          //border-radius: 4px;
+        }
+
+
+      }
+
+      .content-field {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .content-txt {
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
+        }
+
+        .content-form {
+          margin-top: 12px;
+          resize: none;
+          width: 100%;
+          min-height: 140px;
+          padding: 6px;
+          @include setFont($COLOR_222222, $FONT_WEIGHT_REGULAR, 14px);
+        }
+      }
+
+
+      .send-btn-con {
+        .send-btn.inActive {
+          flex-direction: row;
+          margin-top: 30px;
+          background: none;
+          min-width: 120px;
+          min-height: 40px;
+          float: right;
+          border: 1px solid $COLOR_FFFFFF;
+          @include setPointerEventsNone();
+          @include setFont($COLOR_EF5350, $FONT_WEIGHT_REGULAR, 16px);
+        }
+
+        .send-btn.active {
+          flex-direction: row;
+          margin-top: 30px;
+          background: none;
+          min-width: 120px;
+          min-height: 40px;
+          float: right;
+          border: 1px solid $COLOR_FFFFFF;
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
+        }
+      }
+    }
   }
 }

@@ -13,7 +13,6 @@ import { useObserver } from "mobx-react-lite"
 
 const IndexPage = () => {
   const store = useStore()
-  console.log("popupOn: ", store.base.popupOpt.popupOn)
   return useObserver(() => (
     <Layout>
       <SEO title="Introduce"/>

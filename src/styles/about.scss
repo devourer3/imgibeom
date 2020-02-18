@@ -2,12 +2,9 @@
 @import "variable";
 
 @media screen and #{$DESKTOP} {
-
-
   .about {
     .ab-idx {
       margin-top: 60px;
-
       .ab-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 22px);
       }
@@ -18,10 +15,8 @@
       flex-direction: row;
       align-items: center;
       margin-top: 60px;
-
       .pf-image-con {
         margin-left: auto;
-
         .pf-image {
           width: 220px;
           height: 220px;
@@ -54,13 +49,58 @@
       }
     }
   }
-
 }
 
 
 
-@media screen and #{$MOBILE} {
+@media screen and #{$TABLET} {
   .desktop {
     display: none;
+  }
+  .about {
+    .ab-idx {
+      margin-top: 20px;
+      .ab-text {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 18px);
+      }
+    }
+
+    .ma-about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      .pf-image-con {
+        .pf-image {
+          width: 140px !important;
+          height: 140px !important;
+          border-radius: 120px;
+          border: 3px solid $COLOR_DDDDDD;
+        }
+      }
+
+      .pf-desc-con {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        .desc-1 {
+          margin-top: 22px;
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 24px);
+          white-space: pre-wrap;
+        }
+
+        .desc-2 {
+          margin-top: 22px;
+          @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
+          white-space: pre-wrap;
+        }
+
+        .name {
+
+        }
+      }
+    }
   }
 }
