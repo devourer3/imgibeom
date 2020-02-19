@@ -1,25 +1,47 @@
 import { Link } from "gatsby"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useStore } from "../stores/useStore"
 import { DATA_URL } from "../stores/base-store"
 
 const Footer = () => {
 
-  const store = useStore();
-  const [footNumber, setFooter] = useState("");
+  const store = useStore()
+  const [footNumber, setFooter] = useState("fo-about")
 
   const clickFooter = (e, topPosition) => {
-    console.log("꺄아아아아악: ", e.target.id);
-    setFooter(e.target.id);
-    window.scrollTo({ top: topPosition, left: 0, behavior: "smooth" });
+    // setFooter(e.target.id)
+    window.scrollTo({ top: topPosition, left: 0, behavior: "smooth" })
   }
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if(window.scrollY >= 2320) {
+        setFooter("fo-contact");
+      } else if (window.scrollY < 2400 && window.scrollY >= 2180 ) {
+        setFooter("fo-projects");
+      } else if (window.scrollY < 2180 && window.scrollY >= 1840 ) {
+        setFooter("fo-career");
+      } else if (window.scrollY < 1840 && window.scrollY >= 340 ) {
+        setFooter("fo-skills");
+      } else {
+        setFooter("fo-about");
+      }
+    })
+    return () => {
+      window.removeEventListener("scroll", () => {
+
+      })
+    }
+  });
 
   return (
     <footer>
       <div className="foot-con">
         <div className="foot-about"
              id={"fo-about"}
-             onClick={(e) => {clickFooter(e, 200);}}>
+             onClick={(e) => {
+               clickFooter(e, 0);
+             }}>
           <img
             id={"fo-about"}
             className="about-icon"
@@ -34,7 +56,9 @@ const Footer = () => {
         <div
           className="foot-skills"
           id={"fo-skills"}
-          onClick={(e) => {clickFooter(e, 400);}}>
+          onClick={(e) => {
+            clickFooter(e, 340);
+          }}>
           <img
             id={"fo-skills"}
             className="skills-icon"
@@ -49,7 +73,9 @@ const Footer = () => {
         <div
           className="foot-career"
           id={"fo-career"}
-          onClick={(e) => {clickFooter(e, 600);}}>
+          onClick={(e) => {
+            clickFooter(e, 1840);
+          }}>
           <img
             id={"fo-career"}
             className="career-icon"
@@ -64,7 +90,9 @@ const Footer = () => {
         <div
           className="foot-projects"
           id={"fo-projects"}
-          onClick={(e) => {clickFooter(e, 800);}}>
+          onClick={(e) => {
+            clickFooter(e, 2180);
+          }}>
           <img
             id={"fo-projects"}
             className="projects-icon"
@@ -79,7 +107,9 @@ const Footer = () => {
         <div
           className="foot-contact"
           id={"fo-contact"}
-          onClick={(e) => {clickFooter(e, 1000);}}>
+          onClick={(e) => {
+            clickFooter(e, 2460);
+          }}>
           <img
             id={"fo-contact"}
             className="contact-icon"

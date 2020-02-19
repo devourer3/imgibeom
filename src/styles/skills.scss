@@ -204,3 +204,106 @@
     }
   }
 }
+
+
+@media screen and #{$MOBILE} {
+  .desktop {
+    display: none;
+  }
+  .skills {
+    margin-top: 40px;
+    .skl-idx {
+      .skl-text {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
+      }
+    }
+
+    .lg-con {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+
+      .lg-title {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 12px);
+      }
+
+      .lg-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        .lg-item {
+          @include setSkillItem(3);
+          @include setCursorPointer();
+        }
+      }
+    }
+
+    .pf-con {
+      .pf-title {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 12px);
+      }
+
+      .pf-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+
+        .pf-item {
+          @include setCursorPointer();
+          @include setSkillItem(3);
+        }
+      }
+    }
+
+    .li-con {
+      .li-title {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 12px);
+      }
+
+      .li-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+
+        .li-item {
+          @include setCursorPointer();
+          @include setSkillItem(3);
+        }
+      }
+    }
+
+    .to-con {
+      .to-title {
+        @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 12px);
+      }
+
+      .to-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+
+        .to-item.pointer {
+          @include setCursorPointer();
+          @include setSkillItem(3);
+        }
+
+        .to-item.default {
+          @include setCursorDefault();
+          @include setSkillItem(3);
+        }
+      }
+    }
+  }
+}

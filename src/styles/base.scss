@@ -336,7 +336,7 @@ textarea:focus {
   }
 
   html {
-    max-width: 720px;
+    max-width: 360px;
     margin: 0 auto;
     padding-bottom: 0;
     scroll-behavior: smooth;
@@ -368,9 +368,9 @@ textarea:focus {
       }
 
       main {
-        margin-top: 40px;
+        margin-top: 20px;
         min-height: 100%;
-        padding: 0 80px;
+        padding: 0 20px 62px;
       }
 
       footer {
@@ -381,10 +381,11 @@ textarea:focus {
         left: 0;
         right: 0;
         .foot-con {
+          min-width: 320px;
           display: flex;
           width: 100%;
           min-height: 46px;
-          padding: 8px 12px;
+          padding: 12px 16px;
           align-items: center;
           flex-direction: row;
           justify-content: space-between;
