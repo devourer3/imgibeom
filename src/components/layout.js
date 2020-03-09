@@ -16,10 +16,10 @@ import IeWarning from "./iewarning"
 
 const Layout = ({ children }) => {
 
-  const isIeBrowser = () => {
-    let agent = window.navigator.userAgent.toLowerCase()
-    return (window.navigator.appName === "Netscape" && agent.search("Trident") !== -1) || (agent.indexOf("msie") !== -1)
-  }
+  // const isIeBrowser = () => {
+  //   let agent = window.navigator.userAgent.toLowerCase()
+  //   return (window.navigator.appName === "Netscape" && agent.search("Trident") !== -1) || (agent.indexOf("msie") !== -1)
+  // }
 
   // const data = useStaticQuery(graphql`
   //   query SiteTitleQuery {
@@ -33,10 +33,7 @@ const Layout = ({ children }) => {
 
   return (
     <Fragment>
-      {
-        isIeBrowser() &&
       <IeWarning/>
-      }
       <Header/>
       <main className="main">
         {children}

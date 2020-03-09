@@ -1,5 +1,4 @@
-import {action, computed, observable} from 'mobx'
-import str from '../static/string'
+import {action, observable} from 'mobx'
 
 export default class DefaultStore {
 
