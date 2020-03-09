@@ -8,7 +8,6 @@ import { useStore } from "../stores/useStore"
 // device: 1(desktop), 2(tablet), 3(mobile)
 const scrollMoveTo = (e, topPosition) => {
   // e.preventDefault();
-
   window.scrollTo({ top: topPosition, left: 0, behavior: "smooth" });
 }
 
