@@ -90,9 +90,6 @@ export const Contact = () => {
             <button
               className="btn-sendMail"
               onClick={(event) => {
-                alert("btn-sendmail is Clicked")
-                console.log("THERE ARE mail state :",email)
-                console.log("ON CLICKED?")
                 setMail(true)
               }}
             >
@@ -103,7 +100,7 @@ export const Contact = () => {
         {
           mail === true &&
           <div className="mail-form-container">
-            <fieldset className={"name-field"}>
+            <div className={"name-field"}>
               <span className="name-txt">{store.base.str.W0028}</span>
               <input
                 className="name-form"
@@ -116,7 +113,7 @@ export const Contact = () => {
                   onChangeName(e)
                 }}
               />
-            </fieldset>
+            </div>
             <fieldset className="email-field">
               <span className="email-txt">{store.base.str.W0029}</span>
               <input

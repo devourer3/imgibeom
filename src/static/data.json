@@ -7,7 +7,7 @@
       "percent": 80,
       "per_color": "#4CAF50",
       "l_image": "java.svg",
-      "desc": "처음 개발을 시작하면서 익힌 언어이며, 안드로이드 개발을 코틀린으로 바꾸기 전까지 2년 동안 사용한 언어입니다."
+      "desc": "주력 언어이며, 코틀린과 함께 자유롭게 사용 가능한 언어"
     },
     {
       "name" : "Kotlin",
@@ -16,7 +16,7 @@
       "percent": 75,
       "per_color": "#4CAF50",
       "l_image": "kotlin.png",
-      "desc": "2019년 8월부터 공부 중인 언어이며, 현재 개인 프로젝트에 적용 하였습니다."
+      "desc": "재직 중 틈틈이 공부 하였으며, 현재 개인 프로젝트에 적용 중"
     },
     {
       "name" : "JSX",
@@ -25,7 +25,7 @@
       "percent": 50,
       "per_color": "#FFC107",
       "l_image": "jsx.svg",
-      "desc": "웹 프론트엔드 페이지 개발(리액트-SPA)을 위해 공부하였습니다."
+      "desc": "웹 프론트엔드 페이지 개발(리액트/SPA)을 위해 습득"
     },
     {
       "name" : "Python",
@@ -34,7 +34,7 @@
       "percent": 45,
       "per_color": "#FFC107",
       "l_image": "python.svg",
-      "desc" : "스포츠 앱 서비스의 크롤링 작업 및 인공지능(GAN) 작업을 위해 공부하였습니다."
+      "desc" : "재직 중, 스포츠 뉴스 크롤링 작업 및 인공지능(GAN) 작업을 위해 습득"
     },
     {
       "name": "CSS",
@@ -43,7 +43,7 @@
       "l_image": "css.svg",
       "per_color": "#4CAF50",
       "percent": 85,
-      "desc" : "리액트로 만든 웹페이지의 디자인을 적용하기 위해 공부하였습니다."
+      "desc" : "리액트로 만든 웹페이지의 디자인을 적용하기 위해 습득"
     },
     {
       "name" : "PHP",
@@ -52,7 +52,7 @@
       "percent": 45,
       "per_color": "#FFC107",
       "l_image": "php.svg",
-      "desc" : "안드로이드 개발을 진행하면서, 서버와 클라이언트 간의 데이터를 주고받기 위해 공부하였습니다."
+      "desc" : "클라이언트와 서버의 데이터를 주고받기 위해 습득"
     },
     {
       "name" : "SWIFT",
@@ -61,7 +61,7 @@
       "percent": 20,
       "per_color": "#FF5722",
       "l_image": "swift.png",
-      "desc" : "안드로이드 뿐만 아니라, 다른 모바일 플랫폼 개발을 접해보기 위해 공부하였습니다."
+      "desc" : "안드로이드 뿐만 아니라, 애플의 모바일 개발 플랫폼을 접해보기 위해 습득"
     }
   ],
   "platform" : [
@@ -72,7 +72,7 @@
       "p_image": "android.svg",
       "per_color": "#4CAF50",
       "percent": 85,
-      "desc" : "안드로이드 기본 4대 컴포넌트 뿐만 아니라 MVP, MVVM 아키텍처에 기반하여 개발을 즐깁니다."
+      "desc" : "안드로이드 개발 환경에 매우 익숙하며, MVP 및 MVVM 디자인 패턴에 기반하여 개발 중"
     }
   ],
   "library" : [
@@ -83,7 +83,7 @@
       "li_image": "react.svg",
       "per_color": "#C0CA33",
       "percent": 70,
-      "desc" : "리액트에 대해 기본적인 이해를 하고 있으며, 현재는 최신 트렌드에 맞게 훅을 사용하여 개발을 하고 있습니다."
+      "desc" : "리액트에 대해 기본적인 이해 및, 최신 트렌드에 맞추어 리액트 훅을 사용."
     }
   ],
   "tools" : [
@@ -94,7 +94,7 @@
       "per_color": "#C0CA33",
       "percent": 75,
       "to_image": "git.svg",
-      "desc": "직장 내 팀원들과 지속적인 협업을 하며 사용했기 때문에, 능숙하게 다룰 줄 압니다. 원격 저장소는 Bitbucket 사용.",
+      "desc": "직장 내 팀원들과 지속적으로 협업을 하였으며, 원격 저장소는 Bitbucket 사용.",
       "popup": true
     },
     {
@@ -117,7 +117,7 @@
       "company_image": "frifee.png",
       "year_service": "2018.11.01 ~ 2020.01.30",
       "position" : "Android Developer",
-      "desc" : "자사의 스포츠 앱 서비스인 'SWIPS'를 개발 하였으며,\n여가 액티비티 플랫폼 웹 서비스 '오프렌즈'를 리액트로 개발"
+      "desc" : "자사의 스포츠 앱 서비스인 'SWIPS'를 자바로 개발 하였으며,\n여가 액티비티 플랫폼 웹 서비스 '오프렌즈'를 리액트로 개발"
     }
   ],
   "projects": [
@@ -139,9 +139,8 @@
         "",
         ""
       ],
-      "comment": "개발 및 유지보수",
       "language": "자바",
-      "architecture": "MVP",
+      "pattern": "MVP",
       "library": "Rxjava2, Dagger2, Retrofit2, Realm, Glide4",
       "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
       "url_icon" : "playstore.svg",
@@ -164,8 +163,35 @@
     },
     {
       "category": "private",
+      "p_name": "오프렌즈 모바일",
+      "p_thumbnail": "ofriends.jpg",
+      "p_image": [
+        "portimage/android/of_m/of_1.png",
+        "portimage/android/of_m/of_2.png",
+        "portimage/android/of_m/of_3.png",
+        "portimage/android/of_m/of_4.png"
+      ],
+      "p_image_desc" : [
+        "메인 페이지(1)",
+        "상세 페이지",
+        "메인 페이지(2)",
+        "액티비티 검색"
+      ],
+      "period": "2020.02.26 ~ ",
+      "language": "코틀린",
+      "pattern": "MVVM",
+      "library": "Dagger2, AAC(Coroutine, LiveData, Room), Retrofit2, Glide 등",
+      "database" : "Room(SQLite)",
+      "git_url" : "https://github.com/devourer3/ofriendsM",
+      "url_icon" : "playstore.svg",
+      "commercial": false,
+      "det_cat" : "android"
+    },
+    {
+      "category": "private",
       "p_name": "고음왕",
       "p_thumbnail": "p_android.svg",
+      "period": "2018.2.12 ~ 2018.4.3",
       "p_image": [
         "portimage/android/highpitch/h_0.png",
         "portimage/android/highpitch/h_1.png",
@@ -182,11 +208,10 @@
       ],
       "comment": "개발 및 유지보수",
       "language": "자바",
-      "architecture": "",
       "library": "Retrofit2, Glide, TarsosDSP",
       "database" : "Mysql(5.7.21), SQLite",
       "server": "Apache(2.4.27)",
-      "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
+      "git_url": "https://github.com/devourer3/highpitchedtone",
       "url_icon" : "playstore.svg",
       "commercial": false,
       "det_cat" : "android"
@@ -194,6 +219,7 @@
     {
       "category": "private",
       "p_name": "걸어요, 여행",
+      "period": "2018.4.30 ~ 2018.7.12",
       "p_thumbnail": "p_android.svg",
       "p_image": [
         "portimage/android/travel/t_1.png",
@@ -209,11 +235,10 @@
         "Redis를 활용한, 방송 스트리밍 목록",
         "스트리밍 화면 및 Netty(소켓채널)를 활용한 다대다 채팅"
       ],
-      "comment": "개발 및 유지보수",
+      "server": "Nginx 1.13",
       "language": "자바",
-      "architecture": "",
-      "library": "Retrofit2, Glide",
-      "url": "https://play.google.com/store/apps/details?id=co.frifee.swipssports",
+      "git_url": "https://github.com/devourer3/travelwith",
+      "library": "nginx-rtmp-module, Netty, Retrofit2, Glide, VisionAPI 등",
       "url_icon" : "playstore.svg",
       "commercial": false,
       "det_cat" : "android"

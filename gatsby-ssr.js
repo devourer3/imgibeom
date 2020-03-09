@@ -18,6 +18,8 @@ import { Helmet } from "react-helmet/es/Helmet"
 export function onRenderBody(
   { setHeadComponents, setPreBodyComponents, setPostBodyComponents }) {
   setHeadComponents([
+    <script crossOrigin="anonymous"
+            src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.includes" />
     // <script
     //   data-cfasync="false"
     //   src="form-submission-handler.js"/>
@@ -47,6 +49,7 @@ export function onRenderBody(
   ]);
 
   setPostBodyComponents([
+
     // <script
     //   data-cfasync="true"
     //   src="form-submission-handler.js"/>

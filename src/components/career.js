@@ -30,14 +30,16 @@ export const Career = () => {
               alt=""
               onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
             <div className="info-btn-wrapper">
-              <button
+              <span
                 className="info-btn"
                 onMouseEnter={event => onMouseEnter(event, "-")}
                 onMouseLeave={event => onMouseLeave(event)}/>
             </div>
             {
               (infoHover === true) &&
-              <span className="desc">{item.desc}</span>
+              <div className="desc-wrapper">
+                <span className="desc">{item.desc}</span>
+              </div>
             }
             <span className="carr-title">{item.company}</span>
             <span className="position">{item.position}</span>

@@ -15,9 +15,9 @@
       margin-top: 60px;
 
       .carr-item {
+        display: flex;
         position: relative;
         margin-top: 40px;
-        display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
@@ -35,6 +35,8 @@
           position: absolute;
           margin-left: auto;
           margin-right: auto;
+          left: 0;
+          right: 0;
           padding: 0 20px;
           width: 240px;
           top: 20px;
@@ -44,17 +46,24 @@
             @include setBackgroundImage("question.svg", 20px, 20px);
           }
         }
-
-        .desc {
-          display: flex;
-          background: $COLOR_E0E0E0_OP_96;
+        .desc-wrapper {
           position: absolute;
-          margin-left: 280px;
-          margin-top: -100px;
-          padding: 8px 4px;
+          right: 0;
+          left: 0;
+          top: 50px;
           border-radius: 6px;
-          @include setFont($COLOR_37474F, $FONT_WEIGHT_REGULAR, 12px);
-          white-space: pre-wrap;
+          .desc {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 320px;
+            border-radius: 6px;
+            padding: 8px 4px;
+            background: $COLOR_E0E0E0_OP_96;
+            white-space: pre-wrap;
+            @include setFont($COLOR_37474F, $FONT_WEIGHT_REGULAR, 14px);
+            @include setCursorPointer();
+          }
         }
 
         .carr-title {
@@ -119,29 +128,36 @@
           position: absolute;
           margin-left: auto;
           margin-right: auto;
+          left: 0;
+          right: 0;
           padding: 0 15px;
           width: 180px;
           top: 20px;
           .info-btn {
-            width: 20px !important;
-            height: 20px !important;
-            display: flex;
             margin-left: auto;
             border: none;
             @include setBackgroundImage("question.svg", 20px, 20px);
           }
         }
 
-        .desc {
-          display: flex;
-          background: $COLOR_E0E0E0_OP_96;
+        .desc-wrapper {
           position: absolute;
-          margin-left: 234px;
-          margin-top: -100px;
-          padding: 8px 4px;
+          right: 0;
+          left: 0;
+          top: 50px;
           border-radius: 6px;
-          @include setFont($COLOR_37474F, $FONT_WEIGHT_REGULAR, 10px);
-          white-space: pre-wrap;
+          .desc {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            border-radius: 6px;
+            padding: 8px 4px;
+            background: $COLOR_E0E0E0_OP_96;
+            white-space: pre-wrap;
+            @include setFont($COLOR_37474F, $FONT_WEIGHT_REGULAR, 12px);
+            @include setCursorPointer();
+          }
         }
 
         .carr-title {
@@ -217,16 +233,24 @@
           }
         }
 
-        .desc {
-          display: flex;
-          background: $COLOR_E0E0E0_OP_96;
+        .desc-wrapper {
           position: absolute;
-          margin-left: 0px;
-          margin-top: -40px;
-          padding: 8px 4px;
+          right: 0;
+          left: 0;
+          top: 50px;
           border-radius: 6px;
-          @include setFont($COLOR_37474F, $FONT_WEIGHT_REGULAR, 10px);
-          white-space: pre-wrap;
+          .desc {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+            border-radius: 6px;
+            padding: 8px 4px;
+            background: $COLOR_E0E0E0_OP_96;
+            white-space: pre-wrap;
+            @include setFont($COLOR_37474F, $FONT_WEIGHT_REGULAR, 11px);
+            @include setCursorPointer();
+          }
         }
 
         .carr-title {

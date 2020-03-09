@@ -71,6 +71,28 @@ textarea:focus {
       flex-direction: column;
       justify-content: space-between;
 
+      .ie-warning-section {
+        display: flex;
+        flex-direction: row;
+        .w-entity {
+          width: 100%;
+          min-height: 5vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          background: $COLOR_FFC107;
+          .announce {
+            @include setFont($COLOR_212121, $FONT_WEIGHT_MEDIUM, 13px, true);
+            a {
+              @include setFont($COLOR_212121, $FONT_WEIGHT_BOLD, 13px, true);
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
+
+
       header {
         top: 0;
         z-index: 300;
@@ -87,13 +109,12 @@ textarea:focus {
           .home-con {
             .home {
               @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 20px);
-
               &:before {
                 content: "";
                 display: inline-block;
                 margin-right: 4px;
-                filter: invert(100%);
-                @include setBackgroundImage('android_title.svg', 16px, 16px);
+                //filter: invert(100%);
+                @include setBackgroundImage('android_header.svg', 16px, 16px);
               }
             }
           }
@@ -240,6 +261,28 @@ textarea:focus {
       flex-direction: column;
       justify-content: space-between;
 
+      .ie-warning-section {
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        .w-entity {
+          width: 100%;
+          min-height: 5vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          background: $COLOR_FFC107;
+          .announce {
+            @include setFont($COLOR_212121, $FONT_WEIGHT_MEDIUM, 12px, true);
+            a {
+              @include setFont($COLOR_212121, $FONT_WEIGHT_BOLD, 12px, true);
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
+
       header {
         top: 0;
         z-index: 300;
@@ -256,12 +299,10 @@ textarea:focus {
           .home-con {
             .home {
               @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
-
               &:before {
                 content: "";
                 display: inline-block;
                 margin-right: 4px;
-                filter: invert(100%);
                 @include setBackgroundImage('android_title.svg', 12px, 12px);
               }
             }
@@ -362,6 +403,28 @@ textarea:focus {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
+      .ie-warning-section {
+        position: sticky;
+        display: flex;
+        flex-direction: row;
+        .w-entity {
+          width: 100%;
+          min-height: 5vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          background: $COLOR_FFC107;
+          .announce {
+            @include setFont($COLOR_212121, $FONT_WEIGHT_MEDIUM, 10px, true);
+            a {
+              @include setFont($COLOR_212121, $FONT_WEIGHT_BOLD, 10px, true);
+              text-decoration: underline !important;
+            }
+          }
+        }
+      }
 
       header {
         display: none;

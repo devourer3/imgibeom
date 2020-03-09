@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import React, { useEffect, useState } from "react"
 import { useStore } from "../stores/useStore"
 import { DATA_URL } from "../stores/base-store"
+import smoothscroll from 'smoothscroll-polyfill';
+
 
 const Footer = () => {
 
@@ -10,18 +12,21 @@ const Footer = () => {
 
   const clickFooter = (e, topPosition) => {
     // setFooter(e.target.id)
-    window.scrollTo({ top: topPosition, left: 0, behavior: "smooth" })
+    console.log("topPosition: ", topPosition)
+    // window.scrollTo(0, topPosition);
+    window.scrollTo({ top: topPosition, left: 0, behavior: "smooth" });
   }
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if(window.scrollY >= 2320) {
+      let scollY = window.pageYOffset
+      if(scollY >= 2320) {
         setFooter("fo-contact");
-      } else if (window.scrollY < 2400 && window.scrollY >= 2180 ) {
+      } else if (scollY < 2400 && scollY >= 2180 ) {
         setFooter("fo-projects");
-      } else if (window.scrollY < 2180 && window.scrollY >= 1840 ) {
+      } else if (scollY < 2180 && scollY >= 1840 ) {
         setFooter("fo-career");
-      } else if (window.scrollY < 1840 && window.scrollY >= 340 ) {
+      } else if (scollY < 1840 && scollY >= 340 ) {
         setFooter("fo-skills");
       } else {
         setFooter("fo-about");
@@ -29,7 +34,6 @@ const Footer = () => {
     })
     return () => {
       window.removeEventListener("scroll", () => {
-
       })
     }
   });

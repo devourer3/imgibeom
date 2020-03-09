@@ -10,9 +10,11 @@ import { Projects } from "../components/projects"
 import { Contact } from "../components/contact"
 import { Popup } from "../components/popup"
 import { useObserver } from "mobx-react-lite"
+import smoothscroll from "smoothscroll-polyfill"
 
 const IndexPage = () => {
   const store = useStore()
+  smoothscroll.polyfill();
   return useObserver(() => (
     <Layout>
       <SEO title="Introduce"/>

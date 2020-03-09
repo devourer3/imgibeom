@@ -36,14 +36,16 @@ export const Projects = () => {
                 detailNum === "det-" + index1 &&
                 <div className="proj-detail-entire">
                   <div className="detail-wrapper">
-                    <img
-                      className={"det-close"}
-                      src={DATA_URL + "close.svg"}
-                      alt=""
-                      onClick={(e) => {
-                        clickDetail(e)
-                      }}
-                      onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
+                    <div className="close-wrapper">
+                      <img
+                        className={"det-close"}
+                        src={DATA_URL + "close.svg"}
+                        alt=""
+                        onClick={(e) => {
+                          clickDetail(e)
+                        }}
+                        onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
+                    </div>
                     <div className="det-pic-con">
                       {
                         item.p_image.map((pic, index2) => {
@@ -89,10 +91,38 @@ export const Projects = () => {
                         <span className="lang-title">개발 언어</span>
                         <span className="det-language">- {item.language}</span>
                       </div>
+                      {
+                        item.pattern !== undefined &&
+                        <div className="det-pat-con">
+                          <span className="pat-title">디자인 패턴</span>
+                          <span className="det-pattern">- {item.pattern}</span>
+                        </div>
+                      }
+                      {
+                        item.server !== undefined &&
+                        <div className="det-db-con">
+                          <span className="db-title">웹 서버</span>
+                          <span className="pat-library">- {item.server}</span>
+                        </div>
+                      }
+                      {
+                        item.database !== undefined &&
+                        <div className="det-db-con">
+                          <span className="db-title">데이터베이스</span>
+                          <span className="pat-library">- {item.database}</span>
+                        </div>
+                      }
                       <div className="det-lib-con">
                         <span className="lib-title">사용 라이브러리</span>
                         <span className="det-library">- {item.library}</span>
                       </div>
+                      {
+                        item.period !== undefined &&
+                        <div className="det-prd-con">
+                          <span className="prd-title">개발 기간</span>
+                          <span className="det-period">- {item.period}</span>
+                        </div>
+                      }
                     </div>
                   </div>
                 </div>
@@ -117,19 +147,34 @@ export const Projects = () => {
                 </div>
               }
               <span className="proj-name">{item.p_name}</span>
-              {
-                item.commercial === true &&
-                <a
-                  target="_blank"
-                  className="proj-link"
-                  href={item.url}>
-                  <img
-                    className={"proj-link-thumb"}
-                    src={DATA_URL + item.url_icon}
-                    alt=""
-                    onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
-                </a>
-              }
+              <div className="proj-link-con">
+                {
+                  item.commercial === true &&
+                  <a
+                    target="_blank"
+                    className="proj-link"
+                    href={item.url}>
+                    <img
+                      className={"proj-link-thumb"}
+                      src={DATA_URL + item.url_icon}
+                      alt=""
+                      onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
+                  </a>
+                }
+                {
+                  item.git_url !== undefined &&
+                  <a
+                    target="_blank"
+                    className="proj-git"
+                    href={item.git_url}>
+                    <img
+                      className={"proj-git-thumb"}
+                      src={DATA_URL + "github.svg"}
+                      alt=""
+                      onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
+                  </a>
+                }
+              </div>
               {
                 (descNumber === "proj-" + index1) &&
                 <div className="proj-desc-con">

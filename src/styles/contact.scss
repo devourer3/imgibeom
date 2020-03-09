@@ -3,12 +3,17 @@
 
 @media screen and #{$DESKTOP} {
   .contact {
+    display: flex;
+    flex-direction: column;
     margin-top: 80px;
-
     .cont-idx {
       .cont-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 22px);
       }
+    }
+
+    .cont-sec {
+      width: 100%;
     }
 
     .contact-container {
@@ -61,14 +66,13 @@
         margin-top: 40px;
         display: flex;
         flex-direction: column;
-
         .name-txt {
           @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_REGULAR, 16px);
         }
 
         .name-form {
           margin-top: 12px;
-          min-width: 120px;
+          max-width: 200px;
           padding: 2px;
           @include setFont($COLOR_222222, $FONT_WEIGHT_REGULAR, 14px);
         }
@@ -151,12 +155,17 @@
     display: none;
   }
   .contact {
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
 
     .cont-idx {
       .cont-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 18px);
       }
+    }
+    .cont-sec {
+      width: 100%;
     }
 
     .contact-container {
@@ -214,7 +223,7 @@
 
         .name-form {
           margin-top: 12px;
-          min-width: 120px;
+          max-width: 160px;
           padding: 2px;
           @include setFont($COLOR_222222, $FONT_WEIGHT_REGULAR, 14px);
         }
@@ -296,6 +305,8 @@
     display: none;
   }
   .contact {
+    display: flex;
+    flex-direction: column;
     margin-top: 40px;
 
     .cont-idx {
@@ -303,10 +314,13 @@
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
       }
     }
+    .cont-sec {
+      width: 100%;
+    }
 
     .contact-container {
       width: 100%;
-      min-height: 70vh;
+      min-height: 65vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -333,13 +347,13 @@
 
     .mail-form-container {
       width: 100%;
-      min-height: 70vh;
+      min-height: 65vh;
       display: flex;
       flex-direction: column;
-      margin-top: 120px;
+      margin-top: 40px;
       .appreciate-send {
         display: flex;
-        margin: 30px auto 0;
+        margin: 50px auto 0;
         padding: 0 20px;
         justify-content: center;
         align-items: center;
@@ -360,7 +374,7 @@
 
         .name-form {
           margin-top: 12px;
-          min-width: 120px;
+          max-width: 140px;
           padding: 2px;
           @include setFont($COLOR_222222, $FONT_WEIGHT_REGULAR, 12px);
         }

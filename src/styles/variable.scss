@@ -19,6 +19,7 @@ $COLOR_666666: #666666;
 $COLOR_DDDDDD: #DDDDDD;
 $COLOR_FFF8F4: #FFF8F4;
 $COLOR_FF6600: #FF6600;
+$COLOR_FFC107: #FFC107;
 $COLOR_FFEEEE: #FFEEEE;
 $COLOR_FFFBFB: #FFFBFB;
 $COLOR_000000: #000000;
@@ -131,11 +132,11 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
       position: absolute;
       justify-content: space-between;
       top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       min-width: 180px;
       min-height: 172px;
-      //right: 30px;
-      //left: 30px;
-      bottom: 0;
       text-align: center;
       border: 1px solid $COLOR_FFFFFF;
       border-radius: 5px;
@@ -151,9 +152,12 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
         padding: 4px;
         justify-items: center;
         @include setFont($COLOR_37474F, $FONT_WEIGHT_MEDIUM, 13px);
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          @include setFont($COLOR_37474F, $FONT_WEIGHT_MEDIUM, 12px);
+        }
       }
       .progress-con {
-        margin-bottom: 12px;
+        padding-bottom: 12px;
         .skd-title {
           margin-bottom: 4px;
         }
@@ -163,6 +167,9 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
           min-height: 10px;
           max-height: 50px;
           padding: 0 20px;
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            padding: 20px;
+          }
         }
       }
     }
@@ -194,6 +201,8 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
       min-width: 140px;
       min-height: 140px;
       bottom: 0;
+      left: 0;
+      right: 0;
       text-align: center;
       border: 1px solid $COLOR_FFFFFF;
       border-radius: 5px;
@@ -209,9 +218,12 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
         padding: 4px;
         justify-items: center;
         @include setFont($COLOR_37474F, $FONT_WEIGHT_MEDIUM, 12px);
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          @include setFont($COLOR_37474F, $FONT_WEIGHT_MEDIUM, 11px);
+        }
       }
       .progress-con {
-        margin-bottom: 12px;
+        padding-bottom: 12px;
         .skd-title {
           @include setFont($COLOR_37474F, $FONT_WEIGHT_BOLD, 10px);
           margin-bottom: 4px;
@@ -222,6 +234,9 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
           min-height: 10px;
           max-height: 50px;
           padding: 0 20px;
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            padding: 20px;
+          }
         }
       }
     }
@@ -254,6 +269,8 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
       min-width: 140px;
       min-height: 140px;
       bottom: 0;
+      left: 0;
+      right: 0;
       text-align: center;
       border: 1px solid $COLOR_FFFFFF;
       border-radius: 5px;
@@ -269,9 +286,12 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
         padding: 4px;
         justify-items: center;
         @include setFont($COLOR_37474F, $FONT_WEIGHT_MEDIUM, 10px);
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          @include setFont($COLOR_37474F, $FONT_WEIGHT_MEDIUM, 9px);
+        }
       }
       .progress-con {
-        margin-bottom: 12px;
+        padding-bottom: 12px;
         .skd-title {
           @include setFont($COLOR_37474F, $FONT_WEIGHT_BOLD, 10px);
           margin-bottom: 4px;
@@ -282,6 +302,9 @@ $COLOR_E0E0E0_OP_96: rgba(224, 224, 224, 0.96);
           min-height: 10px;
           max-height: 50px;
           padding: 0 20px;
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            padding: 20px;
+          }
         }
       }
     }
