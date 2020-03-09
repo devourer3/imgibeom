@@ -13,6 +13,7 @@
 
     .carr-list {
       margin-top: 60px;
+
       .carr-item {
         position: relative;
         margin-top: 40px;
@@ -29,13 +30,17 @@
           border-radius: 16px;
         }
 
-        .info-btn {
+        .info-btn-wrapper {
           display: flex;
           position: absolute;
-          margin-left: 100px;
-          margin-top: -100px;
-          border: none;
-          @include setBackgroundImage("question.svg", 20px, 20px);
+          padding: 0 20px;
+          width: 240px;
+          top: 20px;
+          .info-btn {
+            margin-left: auto;
+            border: none;
+            @include setBackgroundImage("question.svg", 20px, 20px);
+          }
         }
 
         .desc {
@@ -81,6 +86,7 @@
   }
   .career {
     margin-top: 40px;
+
     .carr-idx {
       .carr-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 18px);
@@ -89,6 +95,7 @@
 
     .carr-list {
       margin-top: 40px;
+
       .carr-item {
         position: relative;
         margin-top: 24px;
@@ -157,6 +164,7 @@
   }
   .career {
     margin-top: 40px;
+
     .carr-idx {
       .carr-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);
@@ -165,6 +173,7 @@
 
     .carr-list {
       margin-top: 40px;
+
       .carr-item {
         position: relative;
         margin-top: 24px;

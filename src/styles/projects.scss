@@ -198,24 +198,28 @@
 
         .proj-detail-con {
           position: absolute;
-          width: 18px !important;
-          height: 18px !important;
+          display: flex;
+          width: 135px;
           left: 0;
           right: 0;
-          max-width: 24px;
-          max-height: 24px;
           margin-left: auto;
           margin-right: auto;
-          margin-top: 100px;
+          padding: 0 15px;
+          top: 110px;
+          //width: 18px !important;
+          //height: 18px !important;
+          //max-width: 24px;
+          //max-height: 24px;
           @include setCursorPointer();
 
           .proj-detail {
+            display: flex;
             width: 18px !important;
             height: 18px !important;
             max-width: 30px;
             max-height: 30px;
+            margin-left: auto;
           }
-
         }
 
         .proj-link {
@@ -453,19 +457,23 @@
 
         .proj-detail-con {
           position: absolute;
-          width: 18px !important;
-          height: 18px !important;
-          max-width: 24px;
-          max-height: 24px;
-          margin-left: 30px;
-          margin-top: 66px;
+          display: flex;
+          width: 95px;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0 10px;
+          top: 70px;
           @include setCursorPointer();
 
           .proj-detail {
+            display: flex;
             width: 18px !important;
             height: 18px !important;
             max-width: 22px;
             max-height: 22px;
+            margin-left: auto;
           }
         }
 
@@ -704,19 +712,23 @@
 
         .proj-detail-con {
           position: absolute;
-          width: 18px !important;
-          height: 18px !important;
-          max-width: 24px;
-          max-height: 24px;
-          margin-left: 30px;
-          margin-top: 66px;
+          display: flex;
+          width: 95px;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto;
+          padding: 0 10px;
+          top: 70px;
           @include setCursorPointer();
 
           .proj-detail {
+            display: flex;
             width: 18px !important;
             height: 18px !important;
             max-width: 22px;
             max-height: 22px;
+            margin-left: auto;
           }
         }
 
