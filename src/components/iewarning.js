@@ -4,8 +4,8 @@ import { useStore } from "../stores/useStore"
 
 const IeWarning = () => {
   const store = useStore()
-  let agent = navigator.userAgent.toLowerCase();
-  if ( (navigator.appName === 'Netscape' && navigator.userAgent.search('Trident') !== -1) || (agent.indexOf("msie") !== -1) ) {
+  let agent = window.navigator.userAgent.toLowerCase();
+  if ( (window.navigator.appName === 'Netscape' && agent.search('Trident') !== -1) || (agent.indexOf("msie") !== -1) ) {
     return (
       <section className="ie-warning-section">
         <div className="w-entity">
