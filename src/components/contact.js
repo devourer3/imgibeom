@@ -90,6 +90,9 @@ export const Contact = () => {
             <button
               className="btn-sendMail"
               onClick={(event) => {
+                alert("btn-sendmail is Clicked")
+                console.log("THERE ARE mail state :",email)
+                console.log("ON CLICKED?")
                 setMail(true)
               }}
             >
