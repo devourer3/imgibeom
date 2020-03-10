@@ -173,6 +173,19 @@ export const Projects = () => {
                       onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
                   </a>
                 }
+                {
+                  item.apk_url !== undefined &&
+                  <a
+                    target="_blank"
+                    className="proj-apk"
+                    href={item.apk_url}>
+                    <img
+                      className={"proj-apk-thumb"}
+                      src={DATA_URL + "apk.svg"}
+                      alt=""
+                      onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
+                  </a>
+                }
               </div>
               {
                 (descNumber === "proj-" + index1) &&

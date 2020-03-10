@@ -184,6 +184,7 @@
       "database" : "Room(SQLite)",
       "git_url" : "https://github.com/devourer3/ofriendsM",
       "url_icon" : "playstore.svg",
+      "apk_url" : "https://gibeomport.s3.ap-northeast-2.amazonaws.com/apk/ofriendsM_1_0_0_1.apk",
       "commercial": false,
       "det_cat" : "android"
     },

@@ -244,6 +244,10 @@
         .proj-link-con {
           display: flex;
           flex-direction: row;
+          a {
+            margin-left: 4px;
+            margin-right: 4px;
+          }
           .proj-link {
             margin-top: 12px;
             min-width: 28px !important;
@@ -262,6 +266,17 @@
             max-width: 28px !important;
             max-height: 28px !important;
             .proj-git-thumb {
+              max-width: 28px;
+              max-height: 28px;
+            }
+          }
+          .proj-apk {
+            margin-top: 12px;
+            min-width: 28px !important;
+            min-height: 28px !important;
+            max-width: 28px !important;
+            max-height: 28px !important;
+            .proj-apk-thumb {
               max-width: 28px;
               max-height: 28px;
             }
@@ -536,30 +551,50 @@
           }
         }
 
-        .proj-link {
-          margin-top: 12px;
-          min-width: 28px !important;
-          min-height: 28px !important;
-          max-width: 28px !important;
-          max-height: 28px !important;
-          .proj-link-thumb {
-            width: 100%;
-            max-width: 24px;
-            max-height: 24px;
+        .proj-link-con {
+          display: flex;
+          flex-direction: row;
+          a {
+            margin: 0 3px;
+          }
+          .proj-link {
+            margin-top: 12px;
+            min-width: 28px !important;
+            min-height: 28px !important;
+            max-width: 28px !important;
+            max-height: 28px !important;
+            .proj-link-thumb {
+              width: 100%;
+              max-width: 24px;
+              max-height: 24px;
+            }
+          }
+          .proj-git {
+            margin-top: 12px;
+            min-width: 28px !important;
+            min-height: 28px !important;
+            max-width: 28px !important;
+            max-height: 28px !important;
+            .proj-git-thumb {
+              width: 100%;
+              max-width: 24px;
+              max-height: 24px;
+            }
+          }
+          .proj-apk {
+            margin-top: 12px;
+            min-width: 28px !important;
+            min-height: 28px !important;
+            max-width: 28px !important;
+            max-height: 28px !important;
+            .proj-apk-thumb {
+              max-width: 24px;
+              max-height: 24px;
+            }
           }
         }
-        .proj-git {
-          margin-top: 12px;
-          min-width: 28px !important;
-          min-height: 28px !important;
-          max-width: 28px !important;
-          max-height: 28px !important;
-          .proj-git-thumb {
-            width: 100%;
-            max-width: 24px;
-            max-height: 24px;
-          }
-        }
+
+
 
         .proj-name {
           margin-top: 10px;
@@ -838,30 +873,47 @@
           }
         }
 
-        .proj-link {
-          margin-top: 12px;
-          min-width: 28px !important;
-          min-height: 28px !important;
-          max-width: 28px !important;
-          max-height: 28px !important;
-          .proj-link-thumb {
-            width: 100%;
-            max-width: 20px;
-            max-height: 20px;
+        .proj-link-con {
+          display: flex;
+          flex-direction: row;
+          margin: 0 3px;
+          .proj-link {
+            margin-top: 12px;
+            min-width: 28px !important;
+            min-height: 28px !important;
+            max-width: 28px !important;
+            max-height: 28px !important;
+            .proj-link-thumb {
+              width: 100%;
+              max-width: 20px;
+              max-height: 20px;
+            }
+          }
+          .proj-git {
+            margin-top: 12px;
+            min-width: 28px !important;
+            min-height: 28px !important;
+            max-width: 28px !important;
+            max-height: 28px !important;
+            .proj-git-thumb {
+              width: 100%;
+              max-width: 20px;
+              max-height: 20px;
+            }
+          }
+          .proj-apk {
+            margin-top: 12px;
+            min-width: 28px !important;
+            min-height: 28px !important;
+            max-width: 28px !important;
+            max-height: 28px !important;
+            .proj-apk-thumb {
+              max-width: 20px;
+              max-height: 20px;
+            }
           }
         }
-        .proj-git {
-          margin-top: 12px;
-          min-width: 28px !important;
-          min-height: 28px !important;
-          max-width: 28px !important;
-          max-height: 28px !important;
-          .proj-git-thumb {
-            width: 100%;
-            max-width: 20px;
-            max-height: 20px;
-          }
-        }
+
 
         .proj-name {
           margin-top: 10px;
