@@ -155,7 +155,7 @@
         "react.svg"
       ],
       "comment": "개발 및 출시",
-      "language": "자바스크립트(리액트)",
+      "language": "JSX, CSS",
       "url": "https://www.ofriends.co.kr",
       "url_icon": "web.svg",
       "commercial": true,
@@ -242,6 +242,17 @@
       "url_icon" : "playstore.svg",
       "commercial": false,
       "det_cat" : "android"
+    },
+    {
+      "category": "private",
+      "p_name": "포트폴리오",
+      "period": "2020.2.13 ~ 2020.2.19",
+      "language": "JSX, CSS",
+      "git_url": "https://github.com/devourer3/imgibeom",
+      "library": "Gatsby, MobX",
+      "commercial": false,
+      "det_cat" : "react",
+      "p_thumbnail": "react.svg"
     }
   ]
 }
