@@ -67,7 +67,7 @@ export const Contact = () => {
 
   return (
     <>
-      <div className="contact">
+      <div className="contact" id={"id-contact"}>
         <div className="cont-idx">
         <span className="cont-text">
           {store.base.str.W0007}

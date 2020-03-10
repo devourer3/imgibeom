@@ -3,7 +3,7 @@
 
 @media screen and #{$DESKTOP} {
   .skills {
-    margin-top: 80px;
+    padding-top: 80px;
     .skl-idx {
       .skl-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 22px);
@@ -108,7 +108,7 @@
     display: none;
   }
   .skills {
-    margin-top: 40px;
+    padding-top: 40px;
     .skl-idx {
       .skl-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 18px);
@@ -211,7 +211,7 @@
     display: none;
   }
   .skills {
-    margin-top: 40px;
+    padding-top: 40px;
     .skl-idx {
       .skl-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 16px);

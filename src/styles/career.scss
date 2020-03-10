@@ -3,8 +3,7 @@
 
 @media screen and #{$DESKTOP} {
   .career {
-    margin-top: 80px;
-
+    padding-top: 80px;
     .carr-idx {
       .carr-text {
         @include setFont($COLOR_FFFFFF, $FONT_WEIGHT_BOLD, 22px);
@@ -96,7 +95,7 @@
     display: none;
   }
   .career {
-    margin-top: 40px;
+    padding-top: 40px;
 
     .carr-idx {
       .carr-text {
@@ -199,7 +198,7 @@
     }
 
     .carr-list {
-      margin-top: 40px;
+      padding-top: 40px;
 
       .carr-item {
         position: relative;

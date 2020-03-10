@@ -54,7 +54,7 @@ export const Career = () => {
   }
 
   return (
-    <div className="career">
+    <div className="career" id={"id-career"}>
       <div className="carr-idx">
         <span className="carr-text">
           {store.base.str.W0005}

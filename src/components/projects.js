@@ -13,7 +13,6 @@ export const Projects = () => {
   const [detailNum, setDetailNum] = useState("")
 
   const clickDetail = (e) => {
-    console.log("target: ", e.target.id)
     setDetailNum(e.target.id)
   }
 
@@ -194,7 +193,7 @@ export const Projects = () => {
 
   return (
     <>
-      <div className="projects">
+      <div className="projects" id={"id-projects"}>
         <div className="proj-idx">
         <span className="proj-text">
           {store.base.str.W0006}

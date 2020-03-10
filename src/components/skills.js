@@ -268,7 +268,7 @@ export const Skills = () => {
   }
 
   return (
-    <div className="skills">
+    <div className="skills" id={"id-skills"}>
       <div className="skl-idx">
         <span className="skl-text">
           {store.base.str.W0009}

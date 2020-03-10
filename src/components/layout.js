@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
     <Fragment>
       <IeWarning/>
       <Header/>
-      <main className="main">
+      <main className="main" id={"id-main"}>
         {children}
       </main>
       <Footer/>

@@ -2,34 +2,31 @@ import { Link } from "gatsby"
 import React, { useEffect, useState } from "react"
 import { useStore } from "../stores/useStore"
 import { DATA_URL } from "../stores/base-store"
-import smoothscroll from 'smoothscroll-polyfill';
-
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const Footer = () => {
 
   const store = useStore()
   const [footNumber, setFooter] = useState("fo-about")
 
-  const clickFooter = (e, topPosition) => {
-    // setFooter(e.target.id)
-    console.log("topPosition: ", topPosition)
-    // window.scrollTo(0, topPosition);
-    window.scrollTo({ top: topPosition, left: 0, behavior: "smooth" });
+  const clickFooter = (e, id = id) => {
+    // scrollTo({ top: topPosition, left: 0, behavior: "smooth" });
+    scrollTo(id);
   }
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      let scollY = window.pageYOffset
-      if(scollY >= 2320) {
-        setFooter("fo-contact");
-      } else if (scollY < 2400 && scollY >= 2180 ) {
-        setFooter("fo-projects");
-      } else if (scollY < 2180 && scollY >= 1840 ) {
-        setFooter("fo-career");
-      } else if (scollY < 1840 && scollY >= 340 ) {
-        setFooter("fo-skills");
-      } else {
+      let scrollY = window.pageYOffset
+      if(scrollY >= 0 && scrollY < 388) {
         setFooter("fo-about");
+      } else if (scrollY >= 388 && scrollY < 1912) {
+        setFooter("fo-skills");
+      } else if (scrollY >= 1912 && scrollY < 2320) {
+        setFooter("fo-career");
+      } else if (scrollY >= 2320 && scrollY < 2400) {
+        setFooter("fo-projects");
+      } else {
+        setFooter("fo-contact");
       }
     })
     return () => {
@@ -44,7 +41,7 @@ const Footer = () => {
         <div className="foot-about"
              id={"fo-about"}
              onClick={(e) => {
-               clickFooter(e, 0);
+               clickFooter(e, '#id-about');
              }}>
           <img
             id={"fo-about"}
@@ -61,7 +58,7 @@ const Footer = () => {
           className="foot-skills"
           id={"fo-skills"}
           onClick={(e) => {
-            clickFooter(e, 340);
+            clickFooter(e, '#id-skills');
           }}>
           <img
             id={"fo-skills"}
@@ -78,7 +75,7 @@ const Footer = () => {
           className="foot-career"
           id={"fo-career"}
           onClick={(e) => {
-            clickFooter(e, 1840);
+            clickFooter(e, '#id-career');
           }}>
           <img
             id={"fo-career"}
@@ -95,7 +92,7 @@ const Footer = () => {
           className="foot-projects"
           id={"fo-projects"}
           onClick={(e) => {
-            clickFooter(e, 2180);
+            clickFooter(e, '#id-projects');
           }}>
           <img
             id={"fo-projects"}
@@ -112,7 +109,7 @@ const Footer = () => {
           className="foot-contact"
           id={"fo-contact"}
           onClick={(e) => {
-            clickFooter(e, 2460);
+            clickFooter(e, '#id-contact');
           }}>
           <img
             id={"fo-contact"}

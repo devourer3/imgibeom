@@ -18,7 +18,7 @@ export const About = () => {
   //   setPercent(0)
   // }
   return (
-    <div className="about">
+    <div className="about" id={"id-about"}>
       <div className="ab-idx">
         <span className="ab-text">
           {store.base.str.W0004}
