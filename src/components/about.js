@@ -29,7 +29,7 @@ export const About = () => {
         <div className="pf-image-con">
           <img className="pf-image"
                alt={""}
-               src={DATA_URL + "pic_example.svg"}
+               src={DATA_URL + "gibeom.png"}
                onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}>
           </img>
         </div>
