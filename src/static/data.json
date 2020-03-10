@@ -207,12 +207,12 @@
         "Java 소켓을 활용한 다대다 채팅(2)",
         "실시간 음정을 체크하고, 점수를 표시하는 노래방 기능"
       ],
-      "comment": "개발 및 유지보수",
       "language": "자바",
       "library": "Retrofit2, Glide, TarsosDSP",
       "database" : "Mysql(5.7.21), SQLite",
       "server": "Apache(2.4.27)",
       "git_url": "https://github.com/devourer3/highpitchedtone",
+      "youtube_url" : "https://youtu.be/vd7eNCvnP6E",
       "url_icon" : "playstore.svg",
       "commercial": false,
       "det_cat" : "android"

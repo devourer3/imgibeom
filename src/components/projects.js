@@ -186,6 +186,19 @@ export const Projects = () => {
                       onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
                   </a>
                 }
+                {
+                  item.youtube_url !== undefined &&
+                  <a
+                    target="_blank"
+                    className="proj-youtube"
+                    href={item.youtube_url}>
+                    <img
+                      className={"proj-youtube-thumb"}
+                      src={DATA_URL + "youtube.svg"}
+                      alt=""
+                      onError={(e) => e.target.setAttribute("src", DATA_URL + "construction.png")}/>
+                  </a>
+                }
               </div>
               {
                 (descNumber === "proj-" + index1) &&
